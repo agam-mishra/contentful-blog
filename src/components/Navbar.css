@@ -1,0 +1,124 @@
+.navbar-logo img {
+	max-width: 90%;
+}
+.dropdown-toggle::after {
+	content: none;
+}
+.mr-auto {
+	margin-left: 3rem;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #f8f9fa;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #f8f9fa;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	transition: color 0.2s ease-in-out;
+	letter-spacing: 0.1em;
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		font-size: 12px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+}
+.dropdown-menu {
+	margin: 0px;
+	position: absolute;
+	top: 100%;
+	padding: 25px 0;
+	min-width: 200px;
+	max-width: 270px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	text-align: left;
+	background: #1e1e1e;
+	border: 1px solid #404040;
+	border-top: 2px solid #fff;
+	border-radius: 0px;
+	transition: all 0.3s ease-in-out;
+}
+.dropdown-item {
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+	position: relative;
+}
+.arrow-icon {
+	position: absolute;
+	right: 10px;
+	display: flex;
+	/* margin-top: 5px; */
+	top: 10px;
+}
+.dropdown-item:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+}
+.nav-link {
+	display: block;
+	padding: .05rem 1rem;
+}
+.arrow {
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 2.75px 2.75px;
+}
+
+.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+.inner-item {
+	border-top: none;
+}
+.Icon-nav {
+	height: 14px;
+	width: 20px;
+	color: #fff;
+}
+@media (max-width: 768px) {
+	.navbar-light .navbar-nav .nav-link:focus,
+	.navbar-light .navbar-nav .nav-link:hover {
+		color: #fff;
+	}
+	.nav-link {
+		color: #f8f9fa;
+		font-family: Montserrat, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		transition: color 0.2s ease-in-out;
+		letter-spacing: 0.1em;
+		font-size: 14px;
+		padding: 10px;
+	}
+	.dropdown-item.active,
+	.dropdown-item:active {
+		color: #fff;
+		text-decoration: none;
+		background-color: #1e1e1e;
+	}
+}
+.collapse.show {
+	background-color: #1e1e1e;
+}
+.dropdown-item:active {
+	text-decoration: none;
+	background-color: #1e1e1e;
+}
+.navbar-toggler {
+	/* color: #bd2130; */
+	/* border-color: rgba(0,0,0,.1); */
+	background-color: #fff;
+}
+button:focus {
+	outline: none;
+}
