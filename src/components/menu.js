@@ -336,7 +336,7 @@ export default class Menu extends Component {
                             <img src={logo} alt="logo"></img>
                         </a>
                 </div>
-                <Navbar expand="lg">
+                <Navbar expand="lg" className="menu-bg">
                     <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">

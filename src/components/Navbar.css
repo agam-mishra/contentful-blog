@@ -122,3 +122,9 @@
 button:focus {
 	outline: none;
 }
+.menu-bg {
+	color: #f8f9fa;
+}
+.nav-link {
+	color: #f8f9fa;
+}
