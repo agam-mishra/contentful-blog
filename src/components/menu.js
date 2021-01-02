@@ -336,39 +336,9 @@ export default class Menu extends Component {
                             <img src={logo} alt="logo"></img>
                         </a>
                 </div>
-                <Navbar expand="lg" className="menu-bg">
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
-                            {
-                                this.state.links.map(link => {
-                                    if (link.subitems && link.subitems.length > 0) {
-                                        return (
-                                            <NavDropdown className="text-uppercase item-menu" title={link.text} id="basic-nav-dropdown" style={{ color: "white" }} renderMenuOnMount={true}>
-                                                {link.subitems.map(subitem =>
-                                                    <NavDropdown.Item href={subitem.link}>{subitem.text}
-                                                        {subitem.innerlink != null &&
-                                                            <>
-                                                            
-                                                            
-                                                            </>
-                                                        }
-                                                    </NavDropdown.Item>
-                                                )}
-                                                </NavDropdown>
-                                                
-                                            );
-                                        }
-                                        else {
-                                            return (
-                                                <Nav.Link className="text-uppercase" href={link.path}>{link.text}</Nav.Link>
-                                            );
-                                        }
-                                    })
-                                }
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Navbar>
+                <div className="test">
+                    <h1>hello testing</h1>
+                    </div>
                 </div>
             )
     }

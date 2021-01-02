@@ -128,3 +128,8 @@ button:focus {
 .nav-link {
 	color: #f8f9fa;
 }
+
+.test {
+	text-align: center;
+	color: #f8f9fa;
+}

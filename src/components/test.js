@@ -336,7 +336,7 @@ export default class Menu extends Component {
             <img src={logo} alt="logo"></img>
           </a>
         </div>
-        <Navbar expand="lg">
+        <Navbar expand="lg" className="menu-bg">
           <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -349,15 +349,8 @@ export default class Menu extends Component {
                           <NavDropdown.Item href={subitem.link}>{subitem.text}
                             {subitem.innerlink != null &&
                               <>
-                                <div className="arrow-icon">
-                                  <i class="arrow right"></i>
-                                </div>
-                                <NavDropdown id="basic-nav-dropdown" style={{ borderTop: "none" }} className="inner-item" renderMenuOnMount={true}>
-                                  {subitem.innerlink.map(inner =>
-                                    <NavDropdown.Item href={inner.link}>{inner.text}
-                                    </NavDropdown.Item>
-                                  )}
-                                </NavDropdown>
+
+
                               </>
                             }
                           </NavDropdown.Item>
