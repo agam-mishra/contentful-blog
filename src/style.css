@@ -452,3 +452,6 @@ a:focus {
 	text-decoration: underline;
 	text-align: center;
 }
+.navbar-light .navbar-nav .nav-link {
+	color: #f8f9fa;
+}
