@@ -5,7 +5,7 @@ var dotenv = require("dotenv").config()
 // }
 module.exports = {
   siteMetadata: {
-    title: `Fitslash Blog`,
+    title: `hello`,
     author: {
       name: `Agam Mishra`,
       summary: `who is developing it with utmost sincerity.`,
@@ -122,7 +122,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/logo.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
