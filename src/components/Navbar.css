@@ -114,7 +114,7 @@
 	background-color: #1e1e1e;
 }
 .navbar-toggler {
-	background-color: #fff;
+	background-color: #fff !important;
 }
 button:focus {
 	outline: none;
