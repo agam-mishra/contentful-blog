@@ -45,7 +45,7 @@ const topBlog = ({ data }) => {
                                         const title = node.title || node.slug
                                         if (node.slug === top.slugForPost) {
                                             return (
-                                                <li key={node.slug}>
+                                                <li key={node.slug} className="pl-2">
                                                     <div>
                                                         <h3 className="blog-title">
                                                             
