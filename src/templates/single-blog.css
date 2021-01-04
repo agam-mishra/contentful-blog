@@ -53,6 +53,6 @@ a.instagram {
 }
 @media (max-width: 768px) {
 	.global-wrapper {
-		margin: 0 10px 0 20px !important;
+		margin: 0 10px 0 10px !important;
 	}
 }

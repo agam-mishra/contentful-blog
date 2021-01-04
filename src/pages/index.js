@@ -28,7 +28,7 @@ const BlogIndex= ({data, location}) => {
           posts.map(({ node }) => {
             const title = node.title || node.slug
               return (
-                <li key={node.slug} className="pl-2">
+                <li key={node.slug}>
                   <div>
                     <h3 className="blog-title">
                       <Link to={node.slug} itemProp="url">
