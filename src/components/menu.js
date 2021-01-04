@@ -341,15 +341,32 @@ export default class Menu extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link className="item-color" href="#home">Home</Nav.Link>
-                            <Nav.Link className="item-color" href="#link">Link</Nav.Link>
-                            <NavDropdown className="item-color" title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item className="item-color" href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item className="item-color" href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item className="item-color" href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item className="item-color" href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
+                            {
+                                this.state.links.map(link => {
+                                    if (link.subitems && link.subitems.length > 0) {
+                                        return (
+                                            <NavDropdown className="text-uppercase item-menu" title={link.text} id="basic-nav-dropdown" style={{ color: "white" }} renderMenuOnMount={true}>
+                                                {link.subitems.map(subitem =>
+                                                    <NavDropdown.Item href={subitem.link}>{subitem.text}
+                                                        {subitem.innerlink != null &&
+                                                            <>
+
+
+                                                            </>
+                                                        }
+                                                    </NavDropdown.Item>
+                                                )}
+                                            </NavDropdown>
+
+                                        );
+                                    }
+                                    else {
+                                        return (
+                                            <Nav.Link className="text-uppercase" href={link.path}>{link.text}</Nav.Link>
+                                        );
+                                    }
+                                })
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
