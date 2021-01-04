@@ -26,9 +26,10 @@ const topBlog = ({ data }) => {
 
 
     const posts = data.allContentfulPost.edges
+    //const siteTitle = data.site.siteMetadata.title
     //const slugs = state.topPostSlug.slugForPost
     return (
-        <Layout>
+        <Layout title="Top Blogs">
             <Announcement />
             <Menu />
             <div className="mt-2">

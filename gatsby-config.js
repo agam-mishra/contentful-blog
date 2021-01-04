@@ -5,7 +5,7 @@ var dotenv = require("dotenv").config()
 // }
 module.exports = {
   siteMetadata: {
-    title: `hello`,
+    title: `FitSlash Blog`,
     author: {
       name: `Agam Mishra`,
       summary: `who is developing it with utmost sincerity.`,

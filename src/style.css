@@ -420,7 +420,7 @@ a:focus {
 .main-menu-wrapper {
 	background-color: #1c1b1b;
 }
-/* Menu style starts */
+/* Menu style ends */
 /* Announcement bar */
 .AnnouncementBar {
 	background-color: #f2ff00;
@@ -435,6 +435,7 @@ a:focus {
 .AnnouncementBar__Wrapper p {
 	margin-bottom: 0;
 }
+/* Announcement Bar Ends */
 .Heading {
 	font-family: Montserrat, sans-serif;
 	font-weight: 500;
@@ -444,11 +445,9 @@ a:focus {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 }
-.navbar-light .navbar-toggler {
-	background-color: #f8f9fa;
-}
 .mostRead {
 	color: #1c1b1b;
 	text-decoration: underline;
 	text-align: center;
 }
+/* Menu style  */
