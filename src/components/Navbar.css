@@ -8,5 +8,5 @@
 	margin-left: 3rem;
 }
 .navbar-light .navbar-nav .nav-link {
-	color: #fff;
+	color: #fff !important;
 }
