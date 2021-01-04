@@ -23,7 +23,7 @@ const BlogIndex= ({data, location}) => {
         </h1>
       </header>
       <SEO title="All Posts" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
-      <ol class="global-wrapper" style={{ listStyle: `none` }}>
+      <ol class="global-wrapper pl-2" style={{ listStyle: `none` }}>
         {
           posts.map(({ node }) => {
             const title = node.title || node.slug

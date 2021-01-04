@@ -26,7 +26,7 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
       <Announcement />
       <Menu />
       <div class="carousel-container"></div>      
-      <div className="global-wrapper">
+      <div className="global-wrapper pl-2">
         <header>
           <h1 className="post-title" itemProp="headline">{post.title}</h1>
         </header>

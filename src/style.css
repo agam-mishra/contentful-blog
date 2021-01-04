@@ -259,7 +259,7 @@ a:focus {
 }
 @media (max-width: 768px) {
 	.global-wrapper {
-		margin: 0 0 0 5px;
+		/* margin: 0 0 0 5px; */
 	}
 	.blog-subtitle,
 	.post-content {
