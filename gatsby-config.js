@@ -131,8 +131,8 @@ module.exports = {
       options: {
         spaceId: `jryk3myqup57`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        //accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        accessToken: 'Yqo2SHb5FO6tmmFgagJN7Qb6LoUm0pEWrwSrCztU0kA',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        //accessToken: 'Yqo2SHb5FO6tmmFgagJN7Qb6LoUm0pEWrwSrCztU0kA',
       },
     },
     `@contentful/gatsby-transformer-contentful-richtext`,
